@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Array sorting and maping</title>
+</head>
+<body>
+<div class=" container py-4">
+<h1 class="mb-1"><b>Playlist sorter</b></h1>
+<div class="card mb-4">
+<div class="card-body">
+<h3  class="card-title">Song Name</h3>
+<button class="btn btn-primary mr-2 " onclick="sortAZ()">Sort A to Z</button>
+<div id="nameresult" class="box p-3 mt-3 rounded"> 
+</div>
+</div>
+</div>
+</div>
+<script>
+var songs =[" Rush ","Zoom ","Boombastic ","Shimy "];
+document.getElementById("nameresult").innerHTML="songs"+songs;
+function sortAZ() {
+songs.sort();
+document.getElementById("nameresult").innerHTML="A to Z "+songs
+}
+
+
+</script>
+</body>
+</html>
